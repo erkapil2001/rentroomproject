@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400;1,600&display=swap')
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*   ############  html style########*/
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7;
+}
+ul li{
+	list-style: none;
+}
+
+a{
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+p,li{
+	font-size: 1.6rem;
+	margin-bottom :0.5em;
+	letter-spacing: 0.15em;
+	}
+	
+h1,h2,h3{
+		margin-bottom: 0.5em;
+		letter-spacing: 0.15em;
+		font-weight: 500;
+	}
+
+
+/* ############# utility classes ###########*/
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	margin:0 auto;
+	margin-left: 16em;
+}
+.lgheading{
+	font-size: 3.5rem;
+}
+.mdheading{
+	font-size:2.2rem;
+}
+.textred{
+	color: #e63946;
+}
+.textlight{
+	color: whitesmoke;
+}
+.textblack{
+	color: rgb(10, 7, 7);
+}
+.textgray{
+	color: gray;
+}
+.btn{
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+.bgdark{
+	background-color: rgb(3, 22, 22);
+}
+
+.btnprimary{
+	background-color: aliceblue;
+	 border-radius: 100px;    
+}
+.btnprimary:hover{
+background-color: cornsilk;
+
+}
+.btnsecondry{
+   border: 1px solid red;
+   border-radius: 100px;
+   color: red;
+   background-color: aliceblue;
+}
+.btnsecondry:hover{
+	background-color: cornsilk;
+}
+
+ /* ################ header styling########### */
+
+.header{
+	height: 95vh;
+	border: 2px solid green;
+	/* background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.5)), url('../img/header.jpg'); */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.5)), url('../img/header.jpg'); 
+	position: relative;              /*   for set header content in center */
+} .navbar{ 
+	/* border: 2px solid white; */
+    padding: 1rem;
+}
+
+.header .logo, .header .navbar a{
+color: white;
+/* font-size: 3rem; */
+}
+ .logo{ 
+	float: left;
+}
+
+ .navbar .navitems {
+	float: right;
+	margin-top: 1 rem;
+}
+
+ .navbar .navitem{
+	/* color: aliceblue; */
+	/* text-decoration: none; */
+	display: inline-block;
+	padding: 1rem;
+	
+}
+
+.navbar a:link
+.navbar a:visited{
+color: rgb(9, 10, 79);
+}
+
+.navbar a{
+	padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+	border-bottom: 1px solid white;
+}
+
+div{
+	clear: both;
+}
+
+/*  ############### header content style ####### */
+
+.headercontent{
+	/* border: 2px solid white; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,-1),rgba(0,0,0,-1));
+
+
+}
+.headercontent h1{
+	text-transform: uppercase;
+	font: weight 700px; ;
+}
+.headercontent p1{
+	text-transform: uppercase;
+
+}
+
+/* ##################### showcase section styling ############# */
+
+.showcase{
+	background-color: antiquewhite;
+		padding: 10rem 0;
+}
+
+.row1,.row2 {
+	/* border: 1px solid black; */
+	margin-bottom: 10rem;
+	display: flex;
+	
+}
+
+.container .row1 , .container .row2{
+	height: 350px;
+} 
+.row1 .imgbox{
+
+ background-image:url(../img/pic2.jpg) ;
+
+ background-position: center;
+ width: 50%;
+
+}  
+.row1 .textbox , .row2 .textbox{
+	width: 50%;
+	border: 2px solid gray;
+	font-weight: 600;
+	background-color: darkgrey;
+	padding: 10px;
+	text-align: center;
+}  
+
+.row2 .imgbox{
+	width: 50%;
+	display: inline-block;
+	object-fit: cover;
+	background-image: url(../img/home.jpg);
+	background-position: center;
+	background: linear-gradient(rgba(6, 5, 5, 0)rgba(0,0,0,0) ) ;
+
+}
+
+/* ############### feature ############## */
+.boxwrapper {
+	/* border: 2px solid rgb(46, 175, 20); */
+	display:flex;
+	box-shadow: 5px 5px 10px 1px black;
+}
+.feature{
+	padding: 10rem 0;
+}
+.box{
+	width:33.3333%;
+	/* border: 2px solid rgb(46, 175, 20); */
+	padding: 2rem;
+	text-align: center;
+
+}
+ .box1 ,.box3{
+	background-color: rgb(9, 30, 23);
+	color: aliceblue;
+}
+.box2{
+	background-color: rgb(5, 137, 91);
+}
+
+ 
+/* ################# footer     ############ /////////////////////////////////////// */
+ .footer{
+	margin-top: 2rem;
+    padding: 2rem;
+	height:12vh ;
+	background-color: rgb(11, 39, 29);
+	text-align: center;
+	font: 400;
+	color: bisque;
+ }
+ .footer .socialmedia i{
+	margin: 1rem;
+	
+
+ }
+
+
+ .about{
+	padding-top: 0rem;
+	
+ }
+ h2{
+	border-bottom: 4px solid red;
+	
+ }
+
+
+ /* ############## about werapper ################### */
+
+
+ .aboutwrapper{
+	/* border: 2px solid rgb(13, 6, 6); */
+	display: flex;
+	margin-top: 2rem;
+	text-align: center;
+ }
+ .aboutwrapper .left {
+      /* color: rgb(21, 235, 235); */
+	  /* border: 2px solid red; */
+	  width:50% ;
+ }
+
+ .aboutwrapper .right{
+	width: 50%;
+	/* border: 1px solid red; */
+ }
+ .aboutwrapper li::before{
+	content:'\2713';
+	color: brown;
+	font-weight: 900;
+	padding-right: 1rem; 
+
+ }
+/*#######################   count  for number block set   ################*/
+.counts{
+	/* border: 2px solid green; */
+	display: flex;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.counts .countitm{
+	/* border:1px solid red; */
+	width: 25%;
+	padding: 1rem;
+	margin-top: 1rem;
+
+}
+.counts span{
+	color: #e63946;
+	font-weight: 900;
+	font-size: 2rem;
+}
+p{
+    color: gray;
+	font-weight: 600;
+}
+span:hover{
+	color: rgb(102, 64, 64);
+	/* border-bottom: 1rem; */
+	font-style: italic;
+	font-size:3rem ;
+
+}
+
+
+/* ######################## banner for second page #################### */
+.banner{
+	border: 2px solid coral;
+	background-color: red;
+    display: flex;
+	height: 7rem;
+	margin-top: 2rem;
+	box-shadow: 85px 5px 12px 1px rgba(11, 6, 6, 0)  ;
+	
+}
+.banner .bannerright{
+	width: 40%;
+	margin-top: 1rem;
+	text-align: right;
+}
+.banner .bannerleft{
+	width: 60%;
+	color: aliceblue;
+}
+.banner .bannerleft .w{
+	color: aliceblue;
+}
+.btncta{
+	/* text-align: center; */
+	font-weight: 600;
+	font-size: 3rem;
+	border: 2px solid white;
+	padding:0.3rem 2.5rem ;
+	letter-spacing: 0.5rem;
+	color: aliceblue;
+}
+
+/*##############  contact page styling   #################*/
+
+.contactform{
+	background: rgb(128, 109, 109);
+	padding: 5rem 0rem;
+	/* height: 60vh; */
+	
+}
+.formwrapper{
+	/* border: 12px solid rgb(234, 10, 200); */
+	display: flex;
+	
+}
+.formwrapper .componeyaddress{
+	background:lightgrey;
+	border: 1px solid black;
+	width:48% ;
+	margin-right: 4%;
+	padding:1rem ;
+	height:760px ;
+}
+
+.componeyaddress  .img2 img{
+	/* border: 1px solid red; */
+	display: block;
+	max-width:90% ;
+	width: 100%;
+
+	height: 40rem;
+	min-height: 20rem;
+	object-fit: cover;
+	object-position: right;
+
+}
+.formwrapper .componeyaddress i {
+	display: inline-block;
+	margin-right: 1rem;
+}
+.formwrapper .componeyaddress h2 {
+	display: inline-block;                /*<-- inline-block ka use border ko uski width tk krne ko hota h*/
+	text-transform: uppercase;
+}
+.form{
+	border: 1px solid black;
+	width:48% ;
+	padding:1rem;
+	background-color: lightgrey;
+}
+
+/* ####################### form styling################ */
+
+.form h2{
+	/* display: inline-block; */
+   border-bottom: 4px solid red;
+   text-transform: uppercase;
+}
+.formwrappe .form{
+	font-size:1.6rem ;
+	background:lightpink ;
+	border: 4ps dotted black;
+	width: 48%;
+	height:760px ;
+        
+}
+.form .formgroup label{
+	display: block;
+	font-weight: 1000;
+	margin-bottom: 1rem;
+	
+	
+}
+.form .formgroup label::after{
+	content: "*";
+	color: #e63946;
+}
+.form .formgroup input{
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	width: 98%;
+
+}
+  .form .formgroup textarea{
+	width: 98%;
+	height: 30rem;
+	padding: 1rem;
+margin-right: 1rem;
+}
+
+.formbtn{
+	display: block;
+	margin:0 auto;
+	font-size:1.8rem ;
+	background: #e63946;
+	color: #dfd9d9;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+/*##################### media queries     ################*/
+
+@media (max-width:500px){
+	html{
+		font-size: 5px;
+	}
+	.navbar.navitems, .navbar .logo{
+		float: none;
+		display:block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		align-items: center;
+	}
+}
+@media (max-width:500px){
+	.headercontent p {
+        font-size: 3px;
+	}
+}
+@media (max-width:500px){
+	  .showcase .container{
+      /* display:block;
+	  width: 50%;
+	  align-content: center;
+	  background: lightgreen; */
+
+	  height: auto;
+	  width: 100%;
+
+	}
+	/* .feature .boxwrapper {
+		margin: 0px ,0px ;
+         width: 80%;
+       align-items: center;}  */
+		
+		.row1 .img , .row1 .textbox,
+		.row2 .img , .row2 .textbox {
+        width: 100%;
+		text-align: center;
+		}
+}
